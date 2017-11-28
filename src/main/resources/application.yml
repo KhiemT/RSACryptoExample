@@ -1,0 +1,20 @@
+spring:
+    datasource:
+        type: com.zaxxer.hikari.HikariDataSource #org.postgresql.ds.PGSimpleDataSource
+        url: jdbc:postgresql://localhost:5432/bankdb
+        username: postgres
+        password: 123456
+
+    jpa:
+        database-platform: org.hibernate.dialect.PostgreSQL94Dialect
+        database: POSTGRESQL
+        show-sql: true
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate.id.new_generator_mappings: true
+            hibernate.temp.use_jdbc_metadata_defaults: false #http://vkuzel.blogspot.com/2016/03/spring-boot-jpa-hibernate-atomikos.html
+
+server:
+    port: 8081
+
