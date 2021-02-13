@@ -9,4 +9,4 @@ Spring Boot
 
 Run command: mvn spring-boot:run
 
-Reference at http://tdkhiem.com/2017/11/28/asymmetric-encryption-by-java-cryptography/
+Reference at https://tdkhiem.com/asymmetric-encryption-by-java-cryptography/
